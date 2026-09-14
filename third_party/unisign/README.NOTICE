@@ -1,0 +1,10 @@
+This directory holds third-party source fetched by
+scripts/09_fetch_unisign.py from https://github.com/ZechengLi19/Uni-Sign
+
+That repository carries NO licence, so these files are all-rights-reserved by
+their authors. They are fetched locally for research use and are deliberately
+NOT tracked by git and NOT redistributed. Do not commit them.
+
+Fetched ref: eed438bcb49e30405cd6ccdfcccca330c134e830
+(recorded 8/20: fetched from `main` on 2026-08-11 and later verified
+byte-identical to this commit, so the artifact is now named exactly.)

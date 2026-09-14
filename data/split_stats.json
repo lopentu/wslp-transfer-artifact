@@ -1,0 +1,91 @@
+{
+ "paragraphs": 407,
+ "utterances": 5282,
+ "signers": 25,
+ "monologue_paragraphs": 207,
+ "dialogue_paragraphs": 200,
+ "lex_items": 940,
+ "pron_items": 975,
+ "k": 3,
+ "folds": [
+  {
+   "fold": 0,
+   "train": {
+    "paragraphs": 243,
+    "utterances": 3255,
+    "lex_items": 560,
+    "pron_items": 631,
+    "signers": 25
+   },
+   "dev": {
+    "paragraphs": 27,
+    "utterances": 267,
+    "lex_items": 50,
+    "pron_items": 31,
+    "signers": 16
+   },
+   "test": {
+    "paragraphs": 137,
+    "utterances": 1760,
+    "lex_items": 330,
+    "pron_items": 313,
+    "signers": 24
+   },
+   "test_signers_seen_in_train": 24,
+   "test_signers": 24
+  },
+  {
+   "fold": 1,
+   "train": {
+    "paragraphs": 245,
+    "utterances": 3176,
+    "lex_items": 585,
+    "pron_items": 615,
+    "signers": 24
+   },
+   "dev": {
+    "paragraphs": 27,
+    "utterances": 345,
+    "lex_items": 53,
+    "pron_items": 53,
+    "signers": 17
+   },
+   "test": {
+    "paragraphs": 135,
+    "utterances": 1761,
+    "lex_items": 302,
+    "pron_items": 307,
+    "signers": 24
+   },
+   "test_signers_seen_in_train": 23,
+   "test_signers": 24
+  },
+  {
+   "fold": 2,
+   "train": {
+    "paragraphs": 245,
+    "utterances": 3191,
+    "lex_items": 578,
+    "pron_items": 570,
+    "signers": 25
+   },
+   "dev": {
+    "paragraphs": 27,
+    "utterances": 330,
+    "lex_items": 54,
+    "pron_items": 50,
+    "signers": 18
+   },
+   "test": {
+    "paragraphs": 135,
+    "utterances": 1761,
+    "lex_items": 308,
+    "pron_items": 355,
+    "signers": 23
+   },
+   "test_signers_seen_in_train": 23,
+   "test_signers": 23
+  }
+ ],
+ "test_signers_unseen_max": 1
+}

@@ -1,0 +1,870 @@
+[
+  {
+    "file": "how2sign_pose_only_slt.pth",
+    "file_gb": 1.1054100533947349,
+    "n_tensors": 627,
+    "n_params_M": 973.459584,
+    "fp32_gb": 3.6264195442199707,
+    "bf16_gb": 1.8132097721099854,
+    "adamw_full_ft_gb": 12.692468404769897,
+    "top_prefixes": {
+      "mt5_model": 966.6,
+      "fusion_gcn_modules": 5.5,
+      "pose_proj": 0.8,
+      "gcn_modules": 0.6,
+      "part_para": 0.0,
+      "proj_linear": 0.0
+    },
+    "pose_input_candidates": [
+      [
+        "gcn_modules.body.layer0_0.gcn.A",
+        [
+          2,
+          9,
+          9
+        ]
+      ],
+      [
+        "gcn_modules.body.layer0_0.gcn.conv.weight",
+        [
+          128,
+          64,
+          1,
+          1
+        ]
+      ],
+      [
+        "gcn_modules.body.layer1_0.gcn.A",
+        [
+          2,
+          9,
+          9
+        ]
+      ],
+      [
+        "gcn_modules.body.layer1_0.gcn.conv.weight",
+        [
+          256,
+          64,
+          1,
+          1
+        ]
+      ],
+      [
+        "gcn_modules.body.layer1_0.residual.0.weight",
+        [
+          128,
+          64,
+          1,
+          1
+        ]
+      ],
+      [
+        "gcn_modules.body.layer2_0.gcn.A",
+        [
+          2,
+          9,
+          9
+        ]
+      ],
+      [
+        "gcn_modules.body.layer2_0.gcn.conv.weight",
+        [
+          512,
+          128,
+          1,
+          1
+        ]
+      ],
+      [
+        "gcn_modules.body.layer2_0.residual.0.weight",
+        [
+          256,
+          128,
+          1,
+          1
+        ]
+      ],
+      [
+        "gcn_modules.left.layer0_0.gcn.A",
+        [
+          2,
+          21,
+          21
+        ]
+      ],
+      [
+        "gcn_modules.left.layer0_0.gcn.conv.weight",
+        [
+          128,
+          64,
+          1,
+          1
+        ]
+      ],
+      [
+        "gcn_modules.left.layer1_0.gcn.A",
+        [
+          2,
+          21,
+          21
+        ]
+      ],
+      [
+        "gcn_modules.left.layer1_0.gcn.conv.weight",
+        [
+          256,
+          64,
+          1,
+          1
+        ]
+      ],
+      [
+        "gcn_modules.left.layer1_0.residual.0.weight",
+        [
+          128,
+          64,
+          1,
+          1
+        ]
+      ],
+      [
+        "gcn_modules.left.layer2_0.gcn.A",
+        [
+          2,
+          21,
+          21
+        ]
+      ],
+      [
+        "gcn_modules.left.layer2_0.gcn.conv.weight",
+        [
+          512,
+          128,
+          1,
+          1
+        ]
+      ],
+      [
+        "gcn_modules.left.layer2_0.residual.0.weight",
+        [
+          256,
+          128,
+          1,
+          1
+        ]
+      ],
+      [
+        "gcn_modules.right.layer0_0.gcn.A",
+        [
+          2,
+          21,
+          21
+        ]
+      ],
+      [
+        "gcn_modules.right.layer0_0.gcn.conv.weight",
+        [
+          128,
+          64,
+          1,
+          1
+        ]
+      ],
+      [
+        "gcn_modules.right.layer1_0.gcn.A",
+        [
+          2,
+          21,
+          21
+        ]
+      ],
+      [
+        "gcn_modules.right.layer1_0.gcn.conv.weight",
+        [
+          256,
+          64,
+          1,
+          1
+        ]
+      ]
+    ],
+    "text_backbone_hint": [
+      "mt5"
+    ],
+    "vocab_candidates": [
+      [
+        "mt5_model.encoder.embed_tokens.weight",
+        [
+          250112,
+          768
+        ]
+      ],
+      [
+        "mt5_model.decoder.embed_tokens.weight",
+        [
+          250112,
+          768
+        ]
+      ]
+    ],
+    "meta": {
+      "sign": "ASL",
+      "text": "en",
+      "task": "sentence SLT",
+      "pose_only": true,
+      "role": "shares the SIGN-LANGUAGE TASK but not the output language"
+    }
+  },
+  {
+    "file": "openasl_pose_only_slt.pth",
+    "file_gb": 1.1054098960012197,
+    "n_tensors": 627,
+    "n_params_M": 973.459584,
+    "fp32_gb": 3.6264195442199707,
+    "bf16_gb": 1.8132097721099854,
+    "adamw_full_ft_gb": 12.692468404769897,
+    "top_prefixes": {
+      "mt5_model": 966.6,
+      "fusion_gcn_modules": 5.5,
+      "pose_proj": 0.8,
+      "gcn_modules": 0.6,
+      "part_para": 0.0,
+      "proj_linear": 0.0
+    },
+    "pose_input_candidates": [
+      [
+        "gcn_modules.body.layer0_0.gcn.A",
+        [
+          2,
+          9,
+          9
+        ]
+      ],
+      [
+        "gcn_modules.body.layer0_0.gcn.conv.weight",
+        [
+          128,
+          64,
+          1,
+          1
+        ]
+      ],
+      [
+        "gcn_modules.body.layer1_0.gcn.A",
+        [
+          2,
+          9,
+          9
+        ]
+      ],
+      [
+        "gcn_modules.body.layer1_0.gcn.conv.weight",
+        [
+          256,
+          64,
+          1,
+          1
+        ]
+      ],
+      [
+        "gcn_modules.body.layer1_0.residual.0.weight",
+        [
+          128,
+          64,
+          1,
+          1
+        ]
+      ],
+      [
+        "gcn_modules.body.layer2_0.gcn.A",
+        [
+          2,
+          9,
+          9
+        ]
+      ],
+      [
+        "gcn_modules.body.layer2_0.gcn.conv.weight",
+        [
+          512,
+          128,
+          1,
+          1
+        ]
+      ],
+      [
+        "gcn_modules.body.layer2_0.residual.0.weight",
+        [
+          256,
+          128,
+          1,
+          1
+        ]
+      ],
+      [
+        "gcn_modules.left.layer0_0.gcn.A",
+        [
+          2,
+          21,
+          21
+        ]
+      ],
+      [
+        "gcn_modules.left.layer0_0.gcn.conv.weight",
+        [
+          128,
+          64,
+          1,
+          1
+        ]
+      ],
+      [
+        "gcn_modules.left.layer1_0.gcn.A",
+        [
+          2,
+          21,
+          21
+        ]
+      ],
+      [
+        "gcn_modules.left.layer1_0.gcn.conv.weight",
+        [
+          256,
+          64,
+          1,
+          1
+        ]
+      ],
+      [
+        "gcn_modules.left.layer1_0.residual.0.weight",
+        [
+          128,
+          64,
+          1,
+          1
+        ]
+      ],
+      [
+        "gcn_modules.left.layer2_0.gcn.A",
+        [
+          2,
+          21,
+          21
+        ]
+      ],
+      [
+        "gcn_modules.left.layer2_0.gcn.conv.weight",
+        [
+          512,
+          128,
+          1,
+          1
+        ]
+      ],
+      [
+        "gcn_modules.left.layer2_0.residual.0.weight",
+        [
+          256,
+          128,
+          1,
+          1
+        ]
+      ],
+      [
+        "gcn_modules.right.layer0_0.gcn.A",
+        [
+          2,
+          21,
+          21
+        ]
+      ],
+      [
+        "gcn_modules.right.layer0_0.gcn.conv.weight",
+        [
+          128,
+          64,
+          1,
+          1
+        ]
+      ],
+      [
+        "gcn_modules.right.layer1_0.gcn.A",
+        [
+          2,
+          21,
+          21
+        ]
+      ],
+      [
+        "gcn_modules.right.layer1_0.gcn.conv.weight",
+        [
+          256,
+          64,
+          1,
+          1
+        ]
+      ]
+    ],
+    "text_backbone_hint": [
+      "mt5"
+    ],
+    "vocab_candidates": [
+      [
+        "mt5_model.encoder.embed_tokens.weight",
+        [
+          250112,
+          768
+        ]
+      ],
+      [
+        "mt5_model.decoder.embed_tokens.weight",
+        [
+          250112,
+          768
+        ]
+      ]
+    ],
+    "meta": {
+      "sign": "ASL",
+      "text": "en",
+      "task": "sentence SLT",
+      "pose_only": true,
+      "role": "second ASL source; checks that ASL results are not dataset-specific"
+    }
+  },
+  {
+    "file": "wlasl_pose_only_islr.pth",
+    "file_gb": 1.1054097982123494,
+    "n_tensors": 627,
+    "n_params_M": 973.459584,
+    "fp32_gb": 3.6264195442199707,
+    "bf16_gb": 1.8132097721099854,
+    "adamw_full_ft_gb": 12.692468404769897,
+    "top_prefixes": {
+      "mt5_model": 966.6,
+      "fusion_gcn_modules": 5.5,
+      "pose_proj": 0.8,
+      "gcn_modules": 0.6,
+      "part_para": 0.0,
+      "proj_linear": 0.0
+    },
+    "pose_input_candidates": [
+      [
+        "gcn_modules.body.layer0_0.gcn.A",
+        [
+          2,
+          9,
+          9
+        ]
+      ],
+      [
+        "gcn_modules.body.layer0_0.gcn.conv.weight",
+        [
+          128,
+          64,
+          1,
+          1
+        ]
+      ],
+      [
+        "gcn_modules.body.layer1_0.gcn.A",
+        [
+          2,
+          9,
+          9
+        ]
+      ],
+      [
+        "gcn_modules.body.layer1_0.gcn.conv.weight",
+        [
+          256,
+          64,
+          1,
+          1
+        ]
+      ],
+      [
+        "gcn_modules.body.layer1_0.residual.0.weight",
+        [
+          128,
+          64,
+          1,
+          1
+        ]
+      ],
+      [
+        "gcn_modules.body.layer2_0.gcn.A",
+        [
+          2,
+          9,
+          9
+        ]
+      ],
+      [
+        "gcn_modules.body.layer2_0.gcn.conv.weight",
+        [
+          512,
+          128,
+          1,
+          1
+        ]
+      ],
+      [
+        "gcn_modules.body.layer2_0.residual.0.weight",
+        [
+          256,
+          128,
+          1,
+          1
+        ]
+      ],
+      [
+        "gcn_modules.left.layer0_0.gcn.A",
+        [
+          2,
+          21,
+          21
+        ]
+      ],
+      [
+        "gcn_modules.left.layer0_0.gcn.conv.weight",
+        [
+          128,
+          64,
+          1,
+          1
+        ]
+      ],
+      [
+        "gcn_modules.left.layer1_0.gcn.A",
+        [
+          2,
+          21,
+          21
+        ]
+      ],
+      [
+        "gcn_modules.left.layer1_0.gcn.conv.weight",
+        [
+          256,
+          64,
+          1,
+          1
+        ]
+      ],
+      [
+        "gcn_modules.left.layer1_0.residual.0.weight",
+        [
+          128,
+          64,
+          1,
+          1
+        ]
+      ],
+      [
+        "gcn_modules.left.layer2_0.gcn.A",
+        [
+          2,
+          21,
+          21
+        ]
+      ],
+      [
+        "gcn_modules.left.layer2_0.gcn.conv.weight",
+        [
+          512,
+          128,
+          1,
+          1
+        ]
+      ],
+      [
+        "gcn_modules.left.layer2_0.residual.0.weight",
+        [
+          256,
+          128,
+          1,
+          1
+        ]
+      ],
+      [
+        "gcn_modules.right.layer0_0.gcn.A",
+        [
+          2,
+          21,
+          21
+        ]
+      ],
+      [
+        "gcn_modules.right.layer0_0.gcn.conv.weight",
+        [
+          128,
+          64,
+          1,
+          1
+        ]
+      ],
+      [
+        "gcn_modules.right.layer1_0.gcn.A",
+        [
+          2,
+          21,
+          21
+        ]
+      ],
+      [
+        "gcn_modules.right.layer1_0.gcn.conv.weight",
+        [
+          256,
+          64,
+          1,
+          1
+        ]
+      ]
+    ],
+    "text_backbone_hint": [
+      "mt5"
+    ],
+    "vocab_candidates": [
+      [
+        "mt5_model.encoder.embed_tokens.weight",
+        [
+          250112,
+          768
+        ]
+      ],
+      [
+        "mt5_model.decoder.embed_tokens.weight",
+        [
+          250112,
+          768
+        ]
+      ]
+    ],
+    "meta": {
+      "sign": "ASL",
+      "text": "-",
+      "task": "isolated sign recognition",
+      "pose_only": true,
+      "role": "pure sign-form encoder; no sentence, no output language"
+    }
+  },
+  {
+    "file": "csl_stage1_weight.pth",
+    "file_gb": 1.1054095048457384,
+    "n_tensors": 627,
+    "n_params_M": 973.459584,
+    "fp32_gb": 3.6264195442199707,
+    "bf16_gb": 1.8132097721099854,
+    "adamw_full_ft_gb": 12.692468404769897,
+    "top_prefixes": {
+      "mt5_model": 966.6,
+      "fusion_gcn_modules": 5.5,
+      "pose_proj": 0.8,
+      "gcn_modules": 0.6,
+      "part_para": 0.0,
+      "proj_linear": 0.0
+    },
+    "pose_input_candidates": [
+      [
+        "gcn_modules.body.layer0_0.gcn.A",
+        [
+          2,
+          9,
+          9
+        ]
+      ],
+      [
+        "gcn_modules.body.layer0_0.gcn.conv.weight",
+        [
+          128,
+          64,
+          1,
+          1
+        ]
+      ],
+      [
+        "gcn_modules.body.layer1_0.gcn.A",
+        [
+          2,
+          9,
+          9
+        ]
+      ],
+      [
+        "gcn_modules.body.layer1_0.gcn.conv.weight",
+        [
+          256,
+          64,
+          1,
+          1
+        ]
+      ],
+      [
+        "gcn_modules.body.layer1_0.residual.0.weight",
+        [
+          128,
+          64,
+          1,
+          1
+        ]
+      ],
+      [
+        "gcn_modules.body.layer2_0.gcn.A",
+        [
+          2,
+          9,
+          9
+        ]
+      ],
+      [
+        "gcn_modules.body.layer2_0.gcn.conv.weight",
+        [
+          512,
+          128,
+          1,
+          1
+        ]
+      ],
+      [
+        "gcn_modules.body.layer2_0.residual.0.weight",
+        [
+          256,
+          128,
+          1,
+          1
+        ]
+      ],
+      [
+        "gcn_modules.left.layer0_0.gcn.A",
+        [
+          2,
+          21,
+          21
+        ]
+      ],
+      [
+        "gcn_modules.left.layer0_0.gcn.conv.weight",
+        [
+          128,
+          64,
+          1,
+          1
+        ]
+      ],
+      [
+        "gcn_modules.left.layer1_0.gcn.A",
+        [
+          2,
+          21,
+          21
+        ]
+      ],
+      [
+        "gcn_modules.left.layer1_0.gcn.conv.weight",
+        [
+          256,
+          64,
+          1,
+          1
+        ]
+      ],
+      [
+        "gcn_modules.left.layer1_0.residual.0.weight",
+        [
+          128,
+          64,
+          1,
+          1
+        ]
+      ],
+      [
+        "gcn_modules.left.layer2_0.gcn.A",
+        [
+          2,
+          21,
+          21
+        ]
+      ],
+      [
+        "gcn_modules.left.layer2_0.gcn.conv.weight",
+        [
+          512,
+          128,
+          1,
+          1
+        ]
+      ],
+      [
+        "gcn_modules.left.layer2_0.residual.0.weight",
+        [
+          256,
+          128,
+          1,
+          1
+        ]
+      ],
+      [
+        "gcn_modules.right.layer0_0.gcn.A",
+        [
+          2,
+          21,
+          21
+        ]
+      ],
+      [
+        "gcn_modules.right.layer0_0.gcn.conv.weight",
+        [
+          128,
+          64,
+          1,
+          1
+        ]
+      ],
+      [
+        "gcn_modules.right.layer1_0.gcn.A",
+        [
+          2,
+          21,
+          21
+        ]
+      ],
+      [
+        "gcn_modules.right.layer1_0.gcn.conv.weight",
+        [
+          256,
+          64,
+          1,
+          1
+        ]
+      ]
+    ],
+    "text_backbone_hint": [
+      "mt5"
+    ],
+    "vocab_candidates": [
+      [
+        "mt5_model.encoder.embed_tokens.weight",
+        [
+          250112,
+          768
+        ]
+      ],
+      [
+        "mt5_model.decoder.embed_tokens.weight",
+        [
+          250112,
+          768
+        ]
+      ]
+    ],
+    "meta": {
+      "sign": "CSL",
+      "text": "zh",
+      "task": "stage-1 pose pretraining",
+      "pose_only": true,
+      "role": "representation before SLT fine-tuning; cleanest encoder transfer"
+    }
+  }
+]

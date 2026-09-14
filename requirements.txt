@@ -1,0 +1,25 @@
+# Pinned loosely; the constraint that matters is mediapipe, which still wants
+# numpy < 2 as of writing. The system python here has numpy 2.4, so the venv must
+# be isolated (setup.sh uses --no-site-packages semantics by default).
+torch>=2.4
+transformers>=4.44
+peft>=0.13
+accelerate>=0.34
+sentencepiece
+safetensors
+sacrebleu>=2.4
+numpy<2
+mediapipe>=0.10.14
+protobuf<5
+tqdm
+huggingface_hub
+# rtmpose backend: the pose format Uni-Sign's checkpoints expect
+rtmlib
+onnxruntime-gpu; platform_machine == "x86_64"
+onnxruntime
+
+# required by Uni-Sign models.py
+einops
+
+# dino backend only
+timm

@@ -1,0 +1,22 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) 2026 Kai-Yang Peng, Chunki Lim, Shu-Kai Hsieh
+
+The measurement outputs in `runs/`, the derived analysis files in `data/` and
+the redacted item metadata in `data/lex/records.jsonl` are licensed under the
+Creative Commons Attribution 4.0 International License.
+
+You are free to share and adapt this material for any purpose, including
+commercially, provided you give appropriate credit. Credit is given by citing:
+
+    Kai-Yang Peng, Chunki Lim and Shu-Kai Hsieh. What Actually Transfers?
+    Diagnosing Output-Projection Initialization in Low-Resource Sign Language
+    Translation. WSLP 2026.
+
+The full licence text is at https://creativecommons.org/licenses/by/4.0/legalcode
+and the summary at https://creativecommons.org/licenses/by/4.0/
+
+This licence covers only material authored by the copyright holders above. The
+Taiwan Sign Language Corpus, the Uni-Sign checkpoints and ASL-LEX are governed
+by their own terms and are not licensed here. No corpus material or signer
+metadata is included in this repository.

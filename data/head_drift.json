@@ -1,0 +1,125 @@
+{
+ "pairs": {
+  "base_head|csl_base_head": {
+   "cos": 0.9997973373444593,
+   "rel_l2": 0.02013181760032861
+  },
+  "base_head|csl_daily": {
+   "cos": 0.2343482982423609,
+   "rel_l2": 3.0204746536559464
+  },
+  "base_head|csl_daily_seed1": {
+   "cos": 0.23404437512626128,
+   "rel_l2": 3.0254083670542915
+  },
+  "base_head|how2sign": {
+   "cos": 0.3478535290772899,
+   "rel_l2": 2.890623865626713
+  },
+  "base_head|how2sign_seed1": {
+   "cos": 0.3479521614839848,
+   "rel_l2": 2.8924220190045244
+  },
+  "base_head|init_swapped": {
+   "cos": 0.2363827791227619,
+   "rel_l2": 3.0074999085166825
+  },
+  "csl_base_head|csl_daily": {
+   "cos": 0.23451417551031487,
+   "rel_l2": 3.0211226135491254
+  },
+  "csl_base_head|csl_daily_seed1": {
+   "cos": 0.23420361704433684,
+   "rel_l2": 3.0260645710635754
+  },
+  "csl_base_head|how2sign": {
+   "cos": 0.3487609177329132,
+   "rel_l2": 2.8904701905509076
+  },
+  "csl_base_head|how2sign_seed1": {
+   "cos": 0.3488637120820413,
+   "rel_l2": 2.892264469543749
+  },
+  "csl_base_head|init_swapped": {
+   "cos": 0.23677124509977948,
+   "rel_l2": 3.0079161996402792
+  },
+  "csl_daily|csl_daily_seed1": {
+   "cos": 0.9997603703093245,
+   "rel_l2": 0.02196599295852519
+  },
+  "csl_daily|how2sign": {
+   "cos": 0.3135050395846491,
+   "rel_l2": 1.1694991744535752
+  },
+  "csl_daily|how2sign_seed1": {
+   "cos": 0.3138486182064131,
+   "rel_l2": 1.1695860820068038
+  },
+  "csl_daily|init_swapped": {
+   "cos": 0.9909569647753893,
+   "rel_l2": 0.1342856929169888
+  },
+  "csl_daily_seed1|how2sign": {
+   "cos": 0.31203113543892796,
+   "rel_l2": 1.1698376715781376
+  },
+  "csl_daily_seed1|how2sign_seed1": {
+   "cos": 0.31238171522259145,
+   "rel_l2": 1.1699184081517304
+  },
+  "csl_daily_seed1|init_swapped": {
+   "cos": 0.9906662313902649,
+   "rel_l2": 0.13637004424636734
+  },
+  "how2sign|how2sign_seed1": {
+   "cos": 0.9988862663025625,
+   "rel_l2": 0.04721596739937306
+  },
+  "how2sign|init_swapped": {
+   "cos": 0.3263244934273112,
+   "rel_l2": 1.160827176086093
+  },
+  "how2sign_seed1|init_swapped": {
+   "cos": 0.32645314950829185,
+   "rel_l2": 1.1603377749327992
+  }
+ },
+ "vs_released": {
+  "how2sign": {
+   "init_from": "how2sign",
+   "cos": 0.9924227693778064,
+   "rel_l2": 0.1266129915714155
+  },
+  "csl_daily": {
+   "init_from": "csl_daily",
+   "cos": 0.9894696938983412,
+   "rel_l2": 0.14488386097226708
+  },
+  "init_swapped": {
+   "init_from": "csl_daily",
+   "cos": 0.988388233076625,
+   "rel_l2": 0.15236546995224395
+  },
+  "base_head": {
+   "init_from": "mt5_base",
+   "cos": 0.9996765878649185,
+   "rel_l2": 0.025981251423383055
+  },
+  "csl_base_head": {
+   "init_from": "mt5_base",
+   "cos": 0.9997004752557833,
+   "rel_l2": 0.024992600815200494
+  },
+  "how2sign_seed1": {
+   "init_from": "how2sign",
+   "cos": 0.992231957329018,
+   "rel_l2": 0.12798690728446743
+  },
+  "csl_daily_seed1": {
+   "init_from": "csl_daily",
+   "cos": 0.9895709334614178,
+   "rel_l2": 0.1441257074999548
+  }
+ }
+}

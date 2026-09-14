@@ -1,0 +1,432 @@
+{
+ "csl_daily": {
+  "vs_stage1_pose": {
+   "tensors": 299,
+   "params_M": 6.886228,
+   "rel_l2": 1.0787950409253297,
+   "cos": 0.8857176586713215
+  },
+  "vs_stage1_mt5": {
+   "tensors": 284,
+   "params_M": 966.573312,
+   "rel_l2": 0.0025946020760336938,
+   "cos": 0.9999966340241097
+  },
+  "vs_stage1_mt5_encoder": {
+   "tensors": 111,
+   "params_M": 277.040256,
+   "rel_l2": 0.0011379817132744446,
+   "cos": 0.9999993524990736
+  },
+  "vs_stage1_mt5_decoder": {
+   "tensors": 171,
+   "params_M": 305.361024,
+   "rel_l2": 0.0016427423986862246,
+   "cos": 0.9999986507004431
+  },
+  "vs_stage1_lm_head": {
+   "tensors": 1,
+   "params_M": 192.086016,
+   "rel_l2": 0.33127884165875315,
+   "cos": 0.9459802745105487
+  }
+ },
+ "how2sign": {
+  "vs_stage1_pose": {
+   "tensors": 299,
+   "params_M": 6.886228,
+   "rel_l2": 1.0548118910442301,
+   "cos": 0.6006687889400657
+  },
+  "vs_stage1_mt5": {
+   "tensors": 284,
+   "params_M": 966.573312,
+   "rel_l2": 0.009577547231401811,
+   "cos": 0.9999541346534805
+  },
+  "vs_stage1_mt5_encoder": {
+   "tensors": 111,
+   "params_M": 277.040256,
+   "rel_l2": 0.00502086681678155,
+   "cos": 0.9999873953782523
+  },
+  "vs_stage1_mt5_decoder": {
+   "tensors": 171,
+   "params_M": 305.361024,
+   "rel_l2": 0.00637154310361521,
+   "cos": 0.9999797015280556
+  },
+  "vs_stage1_lm_head": {
+   "tensors": 1,
+   "params_M": 192.086016,
+   "rel_l2": 1.1724718176588105,
+   "cos": 0.30643162770849636
+  }
+ },
+ "openasl": {
+  "vs_stage1_pose": {
+   "tensors": 299,
+   "params_M": 6.886228,
+   "rel_l2": 1.2372171407139056,
+   "cos": 0.6088799569379303
+  },
+  "vs_stage1_mt5": {
+   "tensors": 284,
+   "params_M": 966.573312,
+   "rel_l2": 0.010105978179568544,
+   "cos": 0.999948933853476
+  },
+  "vs_stage1_mt5_encoder": {
+   "tensors": 111,
+   "params_M": 277.040256,
+   "rel_l2": 0.005287095891892869,
+   "cos": 0.9999860232289196
+  },
+  "vs_stage1_mt5_decoder": {
+   "tensors": 171,
+   "params_M": 305.361024,
+   "rel_l2": 0.006713037288859976,
+   "cos": 0.999977467325058
+  },
+  "vs_stage1_lm_head": {
+   "tensors": 1,
+   "params_M": 192.086016,
+   "rel_l2": 1.237671207226492,
+   "cos": 0.26591531419630593
+  }
+ },
+ "wlasl": {
+  "vs_stage1_pose": {
+   "tensors": 299,
+   "params_M": 6.886228,
+   "rel_l2": 0.995033050629143,
+   "cos": 0.598283947474298
+  },
+  "vs_stage1_mt5": {
+   "tensors": 284,
+   "params_M": 966.573312,
+   "rel_l2": 0.00995424556499717,
+   "cos": 0.9999504559762028
+  },
+  "vs_stage1_mt5_encoder": {
+   "tensors": 111,
+   "params_M": 277.040256,
+   "rel_l2": 0.004897446828268496,
+   "cos": 0.9999880074433585
+  },
+  "vs_stage1_mt5_decoder": {
+   "tensors": 171,
+   "params_M": 305.361024,
+   "rel_l2": 0.006182020137047492,
+   "cos": 0.9999808911416792
+  },
+  "vs_stage1_lm_head": {
+   "tensors": 1,
+   "params_M": 192.086016,
+   "rel_l2": 1.245335086519631,
+   "cos": 0.28258678095465484
+  }
+ },
+ "pairwise": {
+  "csl_stage1|csl_daily|pose": {
+   "tensors": 299,
+   "params_M": 6.886228,
+   "rel_l2": 0.5801464867341523,
+   "cos": 0.8857176586713215
+  },
+  "csl_stage1|csl_daily|mt5": {
+   "tensors": 284,
+   "params_M": 966.573312,
+   "rel_l2": 0.0025945993469422574,
+   "cos": 0.9999966340241097
+  },
+  "csl_stage1|csl_daily|mt5_encoder": {
+   "tensors": 111,
+   "params_M": 277.040256,
+   "rel_l2": 0.0011379813226489238,
+   "cos": 0.9999993524990736
+  },
+  "csl_stage1|csl_daily|mt5_decoder": {
+   "tensors": 171,
+   "params_M": 305.361024,
+   "rel_l2": 0.001642740822453861,
+   "cos": 0.9999986507004431
+  },
+  "csl_stage1|csl_daily|lm_head": {
+   "tensors": 1,
+   "params_M": 192.086016,
+   "rel_l2": 0.32671049677846614,
+   "cos": 0.9459802745105487
+  },
+  "csl_stage1|how2sign|pose": {
+   "tensors": 299,
+   "params_M": 6.886228,
+   "rel_l2": 0.8184881026556958,
+   "cos": 0.6006687889400657
+  },
+  "csl_stage1|how2sign|mt5": {
+   "tensors": 284,
+   "params_M": 966.573312,
+   "rel_l2": 0.009577711987317286,
+   "cos": 0.9999541346534805
+  },
+  "csl_stage1|how2sign|mt5_encoder": {
+   "tensors": 111,
+   "params_M": 277.040256,
+   "rel_l2": 0.005020951989324763,
+   "cos": 0.9999873953782523
+  },
+  "csl_stage1|how2sign|mt5_decoder": {
+   "tensors": 171,
+   "params_M": 305.361024,
+   "rel_l2": 0.006371637721979134,
+   "cos": 0.9999797015280556
+  },
+  "csl_stage1|how2sign|lm_head": {
+   "tensors": 1,
+   "params_M": 192.086016,
+   "rel_l2": 1.1831576998879405,
+   "cos": 0.30643162770849636
+  },
+  "csl_stage1|openasl|pose": {
+   "tensors": 299,
+   "params_M": 6.886228,
+   "rel_l2": 0.7939416758926484,
+   "cos": 0.6088799569379303
+  },
+  "csl_stage1|openasl|mt5": {
+   "tensors": 284,
+   "params_M": 966.573312,
+   "rel_l2": 0.01010615760478567,
+   "cos": 0.999948933853476
+  },
+  "csl_stage1|openasl|mt5_encoder": {
+   "tensors": 111,
+   "params_M": 277.040256,
+   "rel_l2": 0.005287201594869274,
+   "cos": 0.9999860232289196
+  },
+  "csl_stage1|openasl|mt5_decoder": {
+   "tensors": 171,
+   "params_M": 305.361024,
+   "rel_l2": 0.006713153346556641,
+   "cos": 0.999977467325058
+  },
+  "csl_stage1|openasl|lm_head": {
+   "tensors": 1,
+   "params_M": 192.086016,
+   "rel_l2": 1.1876128042214933,
+   "cos": 0.26591531419630593
+  },
+  "csl_stage1|wlasl|pose": {
+   "tensors": 299,
+   "params_M": 6.886228,
+   "rel_l2": 0.8374089131800403,
+   "cos": 0.598283947474298
+  },
+  "csl_stage1|wlasl|mt5": {
+   "tensors": 284,
+   "params_M": 966.573312,
+   "rel_l2": 0.009954364718308939,
+   "cos": 0.9999504559762028
+  },
+  "csl_stage1|wlasl|mt5_encoder": {
+   "tensors": 111,
+   "params_M": 277.040256,
+   "rel_l2": 0.0048975251523180425,
+   "cos": 0.9999880074433585
+  },
+  "csl_stage1|wlasl|mt5_decoder": {
+   "tensors": 171,
+   "params_M": 305.361024,
+   "rel_l2": 0.006182109599545458,
+   "cos": 0.9999808911416792
+  },
+  "csl_stage1|wlasl|lm_head": {
+   "tensors": 1,
+   "params_M": 192.086016,
+   "rel_l2": 1.156555238043123,
+   "cos": 0.28258678095465484
+  },
+  "csl_daily|how2sign|pose": {
+   "tensors": 299,
+   "params_M": 6.886228,
+   "rel_l2": 1.1079589911015626,
+   "cos": 0.6425947822025856
+  },
+  "csl_daily|how2sign|mt5": {
+   "tensors": 284,
+   "params_M": 966.573312,
+   "rel_l2": 0.009666822534381498,
+   "cos": 0.9999532772905225
+  },
+  "csl_daily|how2sign|mt5_encoder": {
+   "tensors": 111,
+   "params_M": 277.040256,
+   "rel_l2": 0.0051654622760073385,
+   "cos": 0.9999866593803761
+  },
+  "csl_daily|how2sign|mt5_decoder": {
+   "tensors": 171,
+   "params_M": 305.361024,
+   "rel_l2": 0.006577664623353312,
+   "cos": 0.9999783676310121
+  },
+  "csl_daily|how2sign|lm_head": {
+   "tensors": 1,
+   "params_M": 192.086016,
+   "rel_l2": 1.1858206091017514,
+   "cos": 0.31313633242769373
+  },
+  "csl_daily|openasl|pose": {
+   "tensors": 299,
+   "params_M": 6.886228,
+   "rel_l2": 0.912517843434735,
+   "cos": 0.6667475063992234
+  },
+  "csl_daily|openasl|mt5": {
+   "tensors": 284,
+   "params_M": 966.573312,
+   "rel_l2": 0.01018389925563837,
+   "cos": 0.9999481452499912
+  },
+  "csl_daily|openasl|mt5_encoder": {
+   "tensors": 111,
+   "params_M": 277.040256,
+   "rel_l2": 0.005424226737171113,
+   "cos": 0.999985289388067
+  },
+  "csl_daily|openasl|mt5_decoder": {
+   "tensors": 171,
+   "params_M": 305.361024,
+   "rel_l2": 0.006905541944718899,
+   "cos": 0.9999761573467846
+  },
+  "csl_daily|openasl|lm_head": {
+   "tensors": 1,
+   "params_M": 192.086016,
+   "rel_l2": 1.189062372318474,
+   "cos": 0.27380270142476393
+  },
+  "csl_daily|wlasl|pose": {
+   "tensors": 299,
+   "params_M": 6.886228,
+   "rel_l2": 1.1874835853370025,
+   "cos": 0.6514447867612201
+  },
+  "csl_daily|wlasl|mt5": {
+   "tensors": 284,
+   "params_M": 966.573312,
+   "rel_l2": 0.010042014021586547,
+   "cos": 0.9999495797185379
+  },
+  "csl_daily|wlasl|mt5_encoder": {
+   "tensors": 111,
+   "params_M": 277.040256,
+   "rel_l2": 0.005046013025276461,
+   "cos": 0.9999872692176667
+  },
+  "csl_daily|wlasl|mt5_decoder": {
+   "tensors": 171,
+   "params_M": 305.361024,
+   "rel_l2": 0.006396485927681683,
+   "cos": 0.9999795429186039
+  },
+  "csl_daily|wlasl|lm_head": {
+   "tensors": 1,
+   "params_M": 192.086016,
+   "rel_l2": 1.159066214457414,
+   "cos": 0.2884991455454162
+  },
+  "how2sign|openasl|pose": {
+   "tensors": 299,
+   "params_M": 6.886228,
+   "rel_l2": 0.3366497607070394,
+   "cos": 0.9495743822625263
+  },
+  "how2sign|openasl|mt5": {
+   "tensors": 284,
+   "params_M": 966.573312,
+   "rel_l2": 0.003970839262646509,
+   "cos": 0.9999921162222644
+  },
+  "how2sign|openasl|mt5_encoder": {
+   "tensors": 111,
+   "params_M": 277.040256,
+   "rel_l2": 0.002111879995561875,
+   "cos": 0.9999977699927681
+  },
+  "how2sign|openasl|mt5_decoder": {
+   "tensors": 171,
+   "params_M": 305.361024,
+   "rel_l2": 0.0027633071908143634,
+   "cos": 0.9999961820789507
+  },
+  "how2sign|openasl|lm_head": {
+   "tensors": 1,
+   "params_M": 192.086016,
+   "rel_l2": 0.4649643521591701,
+   "cos": 0.8875893577070022
+  },
+  "how2sign|wlasl|pose": {
+   "tensors": 299,
+   "params_M": 6.886228,
+   "rel_l2": 0.3382140904537523,
+   "cos": 0.9505641630376525
+  },
+  "how2sign|wlasl|mt5": {
+   "tensors": 284,
+   "params_M": 966.573312,
+   "rel_l2": 0.0037662819448823445,
+   "cos": 0.9999929075367175
+  },
+  "how2sign|wlasl|mt5_encoder": {
+   "tensors": 111,
+   "params_M": 277.040256,
+   "rel_l2": 0.0015998764284465598,
+   "cos": 0.9999987201969185
+  },
+  "how2sign|wlasl|mt5_decoder": {
+   "tensors": 171,
+   "params_M": 305.361024,
+   "rel_l2": 0.0020140125292463923,
+   "cos": 0.9999979718760525
+  },
+  "how2sign|wlasl|lm_head": {
+   "tensors": 1,
+   "params_M": 192.086016,
+   "rel_l2": 0.4580363780221735,
+   "cos": 0.8894687278356384
+  },
+  "openasl|wlasl|pose": {
+   "tensors": 299,
+   "params_M": 6.886228,
+   "rel_l2": 0.47803103416586323,
+   "cos": 0.9498645780517213
+  },
+  "openasl|wlasl|mt5": {
+   "tensors": 284,
+   "params_M": 966.573312,
+   "rel_l2": 0.004373811133112491,
+   "cos": 0.999990434849472
+  },
+  "openasl|wlasl|mt5_encoder": {
+   "tensors": 111,
+   "params_M": 277.040256,
+   "rel_l2": 0.0018936563685939,
+   "cos": 0.9999982070335907
+  },
+  "openasl|wlasl|mt5_decoder": {
+   "tensors": 171,
+   "params_M": 305.361024,
+   "rel_l2": 0.0023749344009132397,
+   "cos": 0.9999971798393037
+  },
+  "openasl|wlasl|lm_head": {
+   "tensors": 1,
+   "params_M": 192.086016,
+   "rel_l2": 0.528800804343566,
+   "cos": 0.856075107803039
+  }
+ }
+}

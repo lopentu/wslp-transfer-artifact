@@ -1,0 +1,103 @@
+% The protocol figure. Reviewer 1 asks for "a visual flow diagram detailing the
+% exact experimental protocol -- outlining how the mT5 model is modified,
+% recombined, or retrained in each distinct scenario", and the objection behind
+% it is that the intervention sequence is hard to track in prose alone.
+%
+% Three panels, in the order a reader needs them: what a released checkpoint is
+% made of, which part each condition takes from which donor, and what happens to
+% the recombined model afterwards. The provenance grid is the load-bearing one --
+% every condition named in the text is a row of it, so "CSL-Daily visual on
+% mT5-base" stops being a phrase to decode and becomes a pattern to look at.
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[
+  font=\scriptsize,
+  part/.style={draw, rounded corners=1pt, minimum height=3.6mm, inner sep=1.5pt,
+               text centered, anchor=west},
+  cell/.style={draw, minimum height=3.5mm, minimum width=11.5mm, inner sep=0pt,
+               text centered, anchor=west, font=\scriptsize},
+  lbl/.style={anchor=east, font=\scriptsize},
+  hdr/.style={anchor=west, font=\scriptsize\itshape},
+  colhdr/.style={anchor=south, font=\tiny\itshape},
+]
+
+% Donor colours. One hue per provenance, used identically in both panels.
+\definecolor{cslc}{RGB}{198,219,239}   % CSL-Daily  (CSL video, Chinese text)
+\definecolor{aslc}{RGB}{253,208,162}   % How2Sign   (ASL video, English text)
+\definecolor{basec}{RGB}{229,229,229}  % mT5-base   (no sign-language training)
+\definecolor{nonec}{RGB}{252,252,252}  % untrained visual branch
+
+% ---------------------------------------------------------------- (a) anatomy
+\node[hdr] at (-2.25,1.10) {(a) what one released checkpoint contains};
+\node[part, fill=nonec, minimum width=13mm] (pose) at (-1.05,0.66) {pose branch};
+\node[part, fill=nonec, minimum width=8mm, right=0.7mm of pose] (bridge) {bridge};
+\node[part, fill=basec, minimum width=15mm, right=0.7mm of bridge] (body) {mT5 body};
+\node[part, fill=basec, minimum width=16mm, right=0.7mm of body] (head) {\texttt{lm\_head}};
+\node[font=\tiny, anchor=north, inner sep=1pt] at (pose.south) {6.9M};
+\node[font=\tiny, anchor=north, inner sep=1pt] at (bridge.south) {0.8M};
+\node[font=\tiny, anchor=north, inner sep=1pt] at (body.south) {390.3M};
+\node[font=\tiny, anchor=north, inner sep=1pt] at (head.south) {192.1M};
+\draw[decorate, decoration={brace, amplitude=2pt, mirror}]
+  ([yshift=-3.6mm]pose.south west) -- ([yshift=-3.6mm]bridge.south east)
+  node[midway, below, font=\tiny, inner sep=1.5pt] {visual side};
+\draw[decorate, decoration={brace, amplitude=2pt, mirror}]
+  ([yshift=-3.6mm]body.south west) -- ([yshift=-3.6mm]head.south east)
+  node[midway, below, font=\tiny, inner sep=1.5pt] {language side (mT5)};
+
+% ------------------------------------------------------------- (b) provenance
+\node[hdr] at (-2.25,-0.72) {(b) where each condition takes each part from};
+\node[colhdr] at (-0.47,-1.22) {visual};
+\node[colhdr] at ( 0.83,-1.22) {mT5 body};
+\node[colhdr] at ( 2.13,-1.22) {\texttt{lm\_head}};
+
+% \provrow{y}{label}{visual fill}{visual}{body fill}{body}{head fill}{head}
+\newcommand{\provrow}[8]{%
+  \node[lbl] at (-1.13,#1) {#2};
+  \node[cell, fill=#3] at (-1.05,#1) {#4};
+  \node[cell, fill=#5] at ( 0.25,#1) {#6};
+  \node[cell, fill=#7] at ( 1.55,#1) {#8};
+}
+\provrow{-1.49}{intact CSL-Daily}{cslc}{CSL-Daily}{cslc}{CSL-Daily}{cslc}{CSL-Daily}
+\provrow{-1.85}{visual only}{cslc}{CSL-Daily}{basec}{mT5-base}{basec}{mT5-base}
+\provrow{-2.21}{language only}{nonec}{untrained}{cslc}{CSL-Daily}{cslc}{CSL-Daily}
+\provrow{-2.57}{\textsc{rand-vis}}{nonec}{untrained}{basec}{mT5-base}{basec}{mT5-base}
+\provrow{-3.09}{projection rescue}{aslc}{How2Sign}{aslc}{How2Sign}{basec}{mT5-base}
+\provrow{-3.45}{reverse}{cslc}{CSL-Daily}{cslc}{CSL-Daily}{aslc}{How2Sign}
+\provrow{-3.81}{complement}{aslc}{How2Sign}{cslc}{CSL-Daily}{aslc}{How2Sign}
+
+\draw[decorate, decoration={brace, amplitude=2.5pt}]
+  (2.82,-1.32) -- (2.82,-2.74)
+  node[midway, right, font=\tiny, inner sep=1.5pt, align=left]
+  {component\\factorial\\(\S\ref{sec:factorial})};
+\draw[decorate, decoration={brace, amplitude=2.5pt}]
+  (2.82,-2.92) -- (2.82,-3.98)
+  node[midway, right, font=\tiny, inner sep=1.5pt, align=left]
+  {projection\\swaps\\(\S\ref{sec:head})};
+
+% ----------------------------------------------------------------- (c) flow
+\node[hdr] at (-2.25,-4.32) {(c) what happens to the recombined model};
+\node[part, fill=white, minimum width=24mm, align=center] (ft) at (-2.25,-5.28)
+  {fine-tune \emph{all} parameters\\on TSL: 12 epochs, 3 folds};
+\node[part, fill=white, minimum width=25mm, align=center, right=4mm of ft] (ev)
+  {evaluate: accuracy,\\$\Delta_{\mathrm{sw}}$, free decoding};
+\draw[-{Latex[length=1.4mm]}] (ft.east) -- (ev.west);
+\draw[-{Latex[length=1.4mm]}, dashed, rounded corners=2pt]
+  (ft.north) -- ++(0,4.4mm) -| (ev.north);
+% `fill=white` on purpose: the label sits ON the dashed path, and masking the
+% line under the text is what keeps both readable at this size.
+\node[font=\tiny, anchor=center, inner sep=1.5pt, fill=white] at (0.05,-4.60)
+  {\emph{post-hoc graft} (\S\ref{sec:posthocmain})};
+
+\end{tikzpicture}
+\caption{The intervention protocol. (a)~A released checkpoint bundles a pose
+branch, a bridge into the decoder, and an mT5 half whose output projection
+(\texttt{lm\_head}) is untied from the input embedding and holds a third of the
+distinct mT5 parameters. (b)~Each condition rebuilds a model by taking each part
+from a named donor, marked by shading: the top four rows are the component
+factorial of \S\ref{sec:factorial}, the bottom three the output-projection swaps
+of \S\ref{sec:head}, which hold the visual side fixed and move one tensor.
+(c)~Every recombined model is fine-tuned and evaluated identically, so a
+difference between rows is one of initialization alone; the dashed path installs
+the same tensor after fine-tuning instead.}
+\label{fig:protocol}
+\end{figure}

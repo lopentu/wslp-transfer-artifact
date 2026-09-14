@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+build/
+# third-party source and donor weights are fetched, never committed --
+# the provenance note that records which commit is the exception
+third_party/unisign/*
+!third_party/unisign/README.NOTICE
+data/external/

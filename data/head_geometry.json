@@ -1,0 +1,148 @@
+{
+ "vocab": {
+  "vocab_rows": 250112,
+  "tokenizer_len": 250100,
+  "cjk_rows": 21600,
+  "latin_rows": 115971,
+  "pad_rows": 12
+ },
+ "to_mt5base": {
+  "csl_stage1": {
+   "cos": 0.2686579453222623,
+   "rel_l2": 0.9645108167388193,
+   "row_cos_mean": 0.2169058392135372,
+   "row_cos_p25": 0.1552525495046498,
+   "row_cos_median": 0.18302311852849926,
+   "row_cos_p75": 0.2127505405935607
+  },
+  "csl_daily": {
+   "cos": 0.23119416119312838,
+   "rel_l2": 0.9772002901167984,
+   "row_cos_mean": 0.18790344567913872,
+   "row_cos_p25": 0.12709378818373318,
+   "row_cos_median": 0.1550158363217794,
+   "row_cos_p75": 0.1851169621156039
+  },
+  "how2sign": {
+   "cos": 0.3501093840605414,
+   "rel_l2": 0.9373530063240023,
+   "row_cos_mean": 0.29212140439527645,
+   "row_cos_p25": 0.17732595331881534,
+   "row_cos_median": 0.19956725023182173,
+   "row_cos_p75": 0.23121684903079887
+  },
+  "openasl": {
+   "cos": 0.3405063970757322,
+   "rel_l2": 0.9402838887455068,
+   "row_cos_mean": 0.27142248844969463,
+   "row_cos_p25": 0.1732250742791057,
+   "row_cos_median": 0.19522583826450646,
+   "row_cos_p75": 0.22366359374126996
+  },
+  "wlasl": {
+   "cos": 0.3973985114742364,
+   "rel_l2": 0.9192768712118853,
+   "row_cos_mean": 0.3192138826412201,
+   "row_cos_p25": 0.18905125906165032,
+   "row_cos_median": 0.21127018631759248,
+   "row_cos_p75": 0.24136799620068153
+  },
+  "tsl_text": {
+   "cos": 0.9996575435337205,
+   "rel_l2": 0.026189432638879986,
+   "row_cos_mean": 0.999633657232886,
+   "row_cos_p25": 0.9995249572013998,
+   "row_cos_median": 0.9998231037171024,
+   "row_cos_p75": 0.9999534933394056
+  }
+ },
+ "row_norms": {
+  "mt5_base": {
+   "cjk_mean_norm": 13.124461009447801,
+   "other_mean_norm": 12.710009127344998,
+   "ratio_cjk_other": 1.0326083071971308,
+   "pad_mean_norm": 8.55857645182201,
+   "latin_mean_norm": 12.853814274108423,
+   "rest_mean_norm": 12.561805316102546,
+   "ratio_cjk_latin": 1.0210557527569497
+  },
+  "csl_stage1": {
+   "cjk_mean_norm": 7.8468971849894595,
+   "other_mean_norm": 3.177268491791119,
+   "ratio_cjk_other": 2.4696991158483854,
+   "pad_mean_norm": 3.183681238476184,
+   "latin_mean_norm": 3.179564674685573,
+   "rest_mean_norm": 3.174902074010345,
+   "ratio_cjk_latin": 2.4679155758218503,
+   "cjk_growth": 0.5978833857893879,
+   "other_growth": 0.24998160583184575,
+   "latin_growth": 0.24736351458649938,
+   "rest_growth": 0.2527424995148227
+  },
+  "csl_daily": {
+   "cjk_mean_norm": 6.970080470303383,
+   "other_mean_norm": 3.542613720178494,
+   "ratio_cjk_other": 1.9674966058541083,
+   "pad_mean_norm": 3.5428636227869177,
+   "latin_mean_norm": 3.543345711462585,
+   "rest_mean_norm": 3.5418593389860242,
+   "ratio_cjk_latin": 1.9670901565589396,
+   "cjk_growth": 0.5310755592390337,
+   "other_growth": 0.27872629237981617,
+   "latin_growth": 0.2756649221702218,
+   "rest_growth": 0.28195464344968285
+  },
+  "how2sign": {
+   "cjk_mean_norm": 2.6742543364965643,
+   "other_mean_norm": 3.475390055187234,
+   "ratio_cjk_other": 0.769483221748038,
+   "pad_mean_norm": 2.6744697851374597,
+   "latin_mean_norm": 4.206099643532985,
+   "rest_mean_norm": 2.7223297625511576,
+   "ratio_cjk_latin": 0.635803847540397,
+   "cjk_growth": 0.20376107899375603,
+   "other_growth": 0.27343725880653325,
+   "latin_growth": 0.3272257988047468,
+   "rest_growth": 0.21671485061637571
+  },
+  "openasl": {
+   "cjk_mean_norm": 2.570596760914736,
+   "other_mean_norm": 3.4911261727812772,
+   "ratio_cjk_other": 0.7363230756185525,
+   "pad_mean_norm": 2.5706232171758363,
+   "latin_mean_norm": 4.2794191707629,
+   "rest_mean_norm": 2.678721128135659,
+   "ratio_cjk_latin": 0.6006882378985257,
+   "cjk_growth": 0.19586303460875545,
+   "other_growth": 0.2746753474212918,
+   "latin_growth": 0.3329299054353835,
+   "rest_growth": 0.21324332456433617
+  },
+  "wlasl": {
+   "cjk_mean_norm": 2.5302648926648024,
+   "other_mean_norm": 3.688321609478616,
+   "ratio_cjk_other": 0.6860206783926531,
+   "pad_mean_norm": 2.530384490088732,
+   "latin_mean_norm": 4.6960712565257765,
+   "rest_mean_norm": 2.649747248045509,
+   "ratio_cjk_latin": 0.5388046208090824,
+   "cjk_growth": 0.19279000416423658,
+   "other_growth": 0.29019031949736074,
+   "latin_growth": 0.3653445705984039,
+   "rest_growth": 0.21093681850401624
+  },
+  "tsl_text": {
+   "cjk_mean_norm": 13.084104447346338,
+   "other_mean_norm": 12.694322503842614,
+   "ratio_cjk_other": 1.0307052182883911,
+   "pad_mean_norm": 8.452195366486007,
+   "latin_mean_norm": 12.838407812938927,
+   "rest_mean_norm": 12.54582996075408,
+   "ratio_cjk_latin": 1.0191376250067232,
+   "cjk_growth": 0.996925088041908,
+   "other_growth": 0.9987658054887911,
+   "latin_growth": 0.9988014093839422,
+   "rest_growth": 0.9987282595975288
+  }
+ }
+}
