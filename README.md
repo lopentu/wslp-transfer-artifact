@@ -16,17 +16,18 @@ Every figure in the manuscript is a LaTeX macro generated from the files here:
 
 ```bash
 python -m venv .venv && .venv/bin/pip install -r requirements.txt
-cd writings/cam-first
-PYTHONPATH=../../src ../../.venv/bin/python make_numbers.py --out numbers.tex
+cd writings
+PYTHONPATH=../src ../.venv/bin/python make_numbers.py --out numbers.tex
 ```
 
 `make_numbers.py` reads `runs/*/eval_*.json` and `data/`, then writes one
-`\newcommand` per reported quantity. `main.tex` cites those macros, so a
-disagreement between the paper and these files surfaces as a changed number
-rather than as prose no reader can check.
+`\newcommand` per reported quantity. Every figure the paper reports is one of
+those macros rather than a hand-typed number, so a disagreement between the
+paper and these files surfaces as a changed value that a reader can find by
+name in `numbers.tex` and check against the published PDF.
 
-Regenerating `numbers.tex` from this repository alone reproduces 5,230 of the
-manuscript's 5,242 macros byte-identically. None of the twelve differences is
+Regenerating `numbers.tex` from this repository alone reproduces 5,237 of the
+manuscript's 5,249 macros byte-identically. None of the twelve differences is
 cited by the paper; the last section says what they are.
 
 ## What is here
@@ -38,7 +39,7 @@ cited by the paper; the last section says what they are.
 | `run_*.sh` | the sweeps, each with its cell list and the reasoning for it in the header |
 | `runs/<cell>/` | per-item outcomes for every trained cell: forced-choice hits, candidate scores, wrong-clip conditions, training logs |
 | `data/` | fold assignment, bootstrap resamples, split statistics, checkpoint geometry, gradient probe, item metadata |
-| `writings/cam-first/` | the manuscript source and the generator that fills it |
+| `writings/` | the macro generator and the `numbers.tex` it produced for the paper |
 
 Cell directories are named `f<fold>_local_<initialization>_full_k4_s<seed>`, so
 `f0_local_how2sign+mt5_base-lm_head_full_k4_s0` is fold 0 of How2Sign with
@@ -46,7 +47,7 @@ mT5-base's output projection installed.
 
 ## What is withheld
 
-Four things are deliberately absent, and each is absent for a reason that also
+Five things are deliberately absent, and each is absent for a reason that also
 constrains what could be shipped in its place.
 
 **The Taiwan Sign Language Corpus.** The corpus is a research-use beta release,
@@ -98,15 +99,23 @@ and the two Han-character shares.
 terms. Place `signdata.csv` at `data/external/asllex/` to resolve the three
 population-level iconicity macros.
 
+**The manuscript source.** `main.tex` and its LaTeX apparatus are not here. The
+claim this repository supports is that the paper's numbers regenerate from the
+measurements, and that claim is carried by `make_numbers.py` and `numbers.tex`
+alone: no TeX engine ships with this tree, so the paper could not be rebuilt
+from it in any case. Read the published PDF alongside `numbers.tex`, where every
+reported figure appears under the macro name the paper expands.
+
 ## What the redaction costs
 
 Withholding those inputs has exactly two visible consequences.
 
-First, three places in `make_numbers.py` had to change, each marked `# RELEASE:`
+First, four places in `make_numbers.py` had to change, each marked `# RELEASE:`
 in the file: the person-label substitution, so the script's internal consistency
 assertion tests the same equivalence against the public records; the fallback to
-`data/gen_metrics.json` for free decoding; and a guard so a missing ASL-LEX
-resolves to a placeholder instead of raising. Nothing else in `src/`, `scripts/`
+`data/gen_metrics.json` for free decoding; a guard so a missing ASL-LEX resolves
+to a placeholder instead of raising; and `ROOT`, which walks up one parent fewer
+here because this tree drops the `writings/<revision>/` level. Nothing else in `src/`, `scripts/`
 or the sweeps differs, apart from two docstrings that had quoted a corpus
 sentence to illustrate a failure mode — the mechanism each describes survives in
 words.

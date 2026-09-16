@@ -25,7 +25,10 @@ import re
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[2]
+# RELEASE: the working repo nests this file one level deeper, under
+# writings/<revision>/. The release drops that level, so ROOT is one
+# parent shallower here. Everything it resolves is unchanged.
+ROOT = Path(__file__).resolve().parents[1]
 # RELEASE: free-decoding statistics, precomputed. See the block that
 # reads it for why the raw decodes are not in the public artifact.
 _GM = ROOT / "data" / "gen_metrics.json"
@@ -744,7 +747,17 @@ def main() -> int:
                  # at chance is only interesting if it also fails to *write* --
                  # contrastive ranking alone cannot show that.
                  "how2sign+mt5_base_perm-lm_head",
-                 "how2sign+mt5_base_permws-lm_head"):
+                 "how2sign+mt5_base_permws-lm_head",
+                 # Added 9/16 with the cr2 fold fill. The norm-matched random
+                 # projection is the baseline the permuted donor is priced
+                 # against in 3.3, so the free-decoding column has to carry it
+                 # too: "worth about as much as no pretrained matrix at all"
+                 # is a claim about writing as well as ranking, and quoting the
+                 # permuted row's BLEU without the random row's leaves the
+                 # comparison one-sided. Fold 0, like every other row in this
+                 # table -- cr2 filled folds 1 and 2 for the contrastive evals
+                 # only, and this table's caption says fold 0.
+                 "how2sign+rand_head_nm-lm_head"):
         m = NAME[init]
         p = ROOT / "runs" / f"f0_local_{init}_full_k4_s0" / "eval_gen.json"
         # RELEASE: eval_gen.json pairs every hypothesis with its corpus
