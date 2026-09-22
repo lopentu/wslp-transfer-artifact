@@ -4,8 +4,7 @@
 **Licensing.** The Uni-Sign repository publishes no licence file, and the GitHub
 API reports no licence, which means all rights are reserved by default. So their
 code is *fetched* at setup time into an untracked directory and imported — never
-copied into this repository and never redistributed with it. Before releasing
-code alongside the paper, ask the authors for terms.
+copied into this repository and never redistributed with it.
 
 The checkpoints are fetched separately by `08_check_external.py`.
 
